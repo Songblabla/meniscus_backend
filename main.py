@@ -43,7 +43,8 @@ app.add_middleware(
         "http://nextjs:3010",
         "http://localhost:8000",
         "http://fastapi:8000",
-        "http://34.226.203.199"
+        "http://34.226.203.199",
+        "https://meniscus-frontend.onrender.com"
     ],  # Allow Next.js frontend
     allow_credentials=True,
     allow_methods=["*"],
