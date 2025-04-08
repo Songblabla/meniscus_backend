@@ -1,0 +1,1130 @@
+2025-02-10T20:31:30,124 [WARN ] main org.pytorch.serve.util.ConfigManager - Your torchserve instance can access any URL to load models. When deploying to production, make sure to limit the set of allowed_urls in config.properties
+2025-02-10T20:31:30,124 [WARN ] main org.pytorch.serve.util.ConfigManager - Your torchserve instance can access any URL to load models. When deploying to production, make sure to limit the set of allowed_urls in config.properties
+2025-02-10T20:31:30,135 [INFO ] main org.pytorch.serve.servingsdk.impl.PluginsManager - Initializing plugins manager...
+2025-02-10T20:31:30,135 [INFO ] main org.pytorch.serve.servingsdk.impl.PluginsManager - Initializing plugins manager...
+2025-02-10T20:31:30,168 [INFO ] main org.pytorch.serve.metrics.configuration.MetricConfiguration - Successfully loaded metrics configuration from /opt/anaconda3/lib/python3.11/site-packages/ts/configs/metrics.yaml
+2025-02-10T20:31:30,168 [INFO ] main org.pytorch.serve.metrics.configuration.MetricConfiguration - Successfully loaded metrics configuration from /opt/anaconda3/lib/python3.11/site-packages/ts/configs/metrics.yaml
+2025-02-10T20:31:30,208 [INFO ] main org.pytorch.serve.ModelServer - 
+Torchserve version: 0.12.0
+TS Home: /opt/anaconda3/lib/python3.11/site-packages
+Current directory: /Users/thanavut/Developer/Capstone/Root-Will-Tear/backend
+Temp directory: /var/folders/c0/sd64djxn1hj2_kvzzktnk4900000gn/T/
+Metrics config path: /opt/anaconda3/lib/python3.11/site-packages/ts/configs/metrics.yaml
+Number of GPUs: 14
+Number of CPUs: 8
+Max heap size: 4096 M
+Python executable: /opt/anaconda3/bin/python
+Config file: config.properties
+Inference address: http://127.0.0.1:8085
+Management address: http://127.0.0.1:8081
+Metrics address: http://127.0.0.1:8082
+Model Store: /Users/thanavut/Developer/Capstone/Root-Will-Tear/backend/model_store
+Initial Models: N/A
+Log dir: /Users/thanavut/Developer/Capstone/Root-Will-Tear/backend/logs
+Metrics dir: /Users/thanavut/Developer/Capstone/Root-Will-Tear/backend/logs
+Netty threads: 0
+Netty client threads: 0
+Default workers per model: 14
+Blacklist Regex: N/A
+Maximum Response Size: 6553500
+Maximum Request Size: 6553500
+Limit Maximum Image Pixels: true
+Prefer direct buffer: false
+Allowed Urls: [file://.*|http(s)?://.*]
+Custom python dependency for model allowed: false
+Enable metrics API: true
+Metrics mode: LOG
+Disable system metrics: false
+Workflow Store: /Users/thanavut/Developer/Capstone/Root-Will-Tear/backend/model_store
+CPP log config: N/A
+Model config: N/A
+System metrics command: default
+Model API enabled: true
+2025-02-10T20:31:30,208 [INFO ] main org.pytorch.serve.ModelServer - 
+Torchserve version: 0.12.0
+TS Home: /opt/anaconda3/lib/python3.11/site-packages
+Current directory: /Users/thanavut/Developer/Capstone/Root-Will-Tear/backend
+Temp directory: /var/folders/c0/sd64djxn1hj2_kvzzktnk4900000gn/T/
+Metrics config path: /opt/anaconda3/lib/python3.11/site-packages/ts/configs/metrics.yaml
+Number of GPUs: 14
+Number of CPUs: 8
+Max heap size: 4096 M
+Python executable: /opt/anaconda3/bin/python
+Config file: config.properties
+Inference address: http://127.0.0.1:8085
+Management address: http://127.0.0.1:8081
+Metrics address: http://127.0.0.1:8082
+Model Store: /Users/thanavut/Developer/Capstone/Root-Will-Tear/backend/model_store
+Initial Models: N/A
+Log dir: /Users/thanavut/Developer/Capstone/Root-Will-Tear/backend/logs
+Metrics dir: /Users/thanavut/Developer/Capstone/Root-Will-Tear/backend/logs
+Netty threads: 0
+Netty client threads: 0
+Default workers per model: 14
+Blacklist Regex: N/A
+Maximum Response Size: 6553500
+Maximum Request Size: 6553500
+Limit Maximum Image Pixels: true
+Prefer direct buffer: false
+Allowed Urls: [file://.*|http(s)?://.*]
+Custom python dependency for model allowed: false
+Enable metrics API: true
+Metrics mode: LOG
+Disable system metrics: false
+Workflow Store: /Users/thanavut/Developer/Capstone/Root-Will-Tear/backend/model_store
+CPP log config: N/A
+Model config: N/A
+System metrics command: default
+Model API enabled: true
+2025-02-10T20:31:30,214 [INFO ] main org.pytorch.serve.servingsdk.impl.PluginsManager -  Loading snapshot serializer plugin...
+2025-02-10T20:31:30,214 [INFO ] main org.pytorch.serve.servingsdk.impl.PluginsManager -  Loading snapshot serializer plugin...
+2025-02-10T20:31:30,227 [INFO ] main org.pytorch.serve.ModelServer - Initialize Inference server with: NioServerSocketChannel.
+2025-02-10T20:31:30,227 [INFO ] main org.pytorch.serve.ModelServer - Initialize Inference server with: NioServerSocketChannel.
+2025-02-10T20:31:30,290 [INFO ] main org.pytorch.serve.ModelServer - Inference API bind to: http://127.0.0.1:8085
+2025-02-10T20:31:30,290 [INFO ] main org.pytorch.serve.ModelServer - Inference API bind to: http://127.0.0.1:8085
+2025-02-10T20:31:30,290 [INFO ] main org.pytorch.serve.ModelServer - Initialize Management server with: NioServerSocketChannel.
+2025-02-10T20:31:30,290 [INFO ] main org.pytorch.serve.ModelServer - Initialize Management server with: NioServerSocketChannel.
+2025-02-10T20:31:30,291 [INFO ] main org.pytorch.serve.ModelServer - Management API bind to: http://127.0.0.1:8081
+2025-02-10T20:31:30,291 [INFO ] main org.pytorch.serve.ModelServer - Management API bind to: http://127.0.0.1:8081
+2025-02-10T20:31:30,291 [INFO ] main org.pytorch.serve.ModelServer - Initialize Metrics server with: NioServerSocketChannel.
+2025-02-10T20:31:30,291 [INFO ] main org.pytorch.serve.ModelServer - Initialize Metrics server with: NioServerSocketChannel.
+2025-02-10T20:31:30,291 [INFO ] main org.pytorch.serve.ModelServer - Metrics API bind to: http://127.0.0.1:8082
+2025-02-10T20:31:30,291 [INFO ] main org.pytorch.serve.ModelServer - Metrics API bind to: http://127.0.0.1:8082
+2025-02-10T20:31:30,450 [ERROR] Thread-1 org.pytorch.serve.metrics.MetricCollector - Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.11/site-packages/ts/metrics/metric_collector.py", line 27, in <module>
+    system_metrics.collect_all(sys.modules['ts.metrics.system_metrics'], arguments.gpu)
+  File "/opt/anaconda3/lib/python3.11/site-packages/ts/metrics/system_metrics.py", line 119, in collect_all
+    value(num_of_gpu)
+  File "/opt/anaconda3/lib/python3.11/site-packages/ts/metrics/system_metrics.py", line 64, in gpu_utilization
+    import nvgpu
+ModuleNotFoundError: No module named 'nvgpu'
+
+2025-02-10T20:31:30,450 [ERROR] Thread-1 org.pytorch.serve.metrics.MetricCollector - Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.11/site-packages/ts/metrics/metric_collector.py", line 27, in <module>
+    system_metrics.collect_all(sys.modules['ts.metrics.system_metrics'], arguments.gpu)
+  File "/opt/anaconda3/lib/python3.11/site-packages/ts/metrics/system_metrics.py", line 119, in collect_all
+    value(num_of_gpu)
+  File "/opt/anaconda3/lib/python3.11/site-packages/ts/metrics/system_metrics.py", line 64, in gpu_utilization
+    import nvgpu
+ModuleNotFoundError: No module named 'nvgpu'
+
+2025-02-10T20:32:30,452 [ERROR] Thread-2 org.pytorch.serve.metrics.MetricCollector - Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.11/site-packages/ts/metrics/metric_collector.py", line 27, in <module>
+    system_metrics.collect_all(sys.modules['ts.metrics.system_metrics'], arguments.gpu)
+  File "/opt/anaconda3/lib/python3.11/site-packages/ts/metrics/system_metrics.py", line 119, in collect_all
+    value(num_of_gpu)
+  File "/opt/anaconda3/lib/python3.11/site-packages/ts/metrics/system_metrics.py", line 64, in gpu_utilization
+    import nvgpu
+ModuleNotFoundError: No module named 'nvgpu'
+
+2025-02-10T20:32:30,452 [ERROR] Thread-2 org.pytorch.serve.metrics.MetricCollector - Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.11/site-packages/ts/metrics/metric_collector.py", line 27, in <module>
+    system_metrics.collect_all(sys.modules['ts.metrics.system_metrics'], arguments.gpu)
+  File "/opt/anaconda3/lib/python3.11/site-packages/ts/metrics/system_metrics.py", line 119, in collect_all
+    value(num_of_gpu)
+  File "/opt/anaconda3/lib/python3.11/site-packages/ts/metrics/system_metrics.py", line 64, in gpu_utilization
+    import nvgpu
+ModuleNotFoundError: No module named 'nvgpu'
+
+2025-02-10T20:33:30,486 [ERROR] Thread-3 org.pytorch.serve.metrics.MetricCollector - Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.11/site-packages/ts/metrics/metric_collector.py", line 27, in <module>
+    system_metrics.collect_all(sys.modules['ts.metrics.system_metrics'], arguments.gpu)
+  File "/opt/anaconda3/lib/python3.11/site-packages/ts/metrics/system_metrics.py", line 119, in collect_all
+    value(num_of_gpu)
+  File "/opt/anaconda3/lib/python3.11/site-packages/ts/metrics/system_metrics.py", line 64, in gpu_utilization
+    import nvgpu
+ModuleNotFoundError: No module named 'nvgpu'
+
+2025-02-10T20:33:30,486 [ERROR] Thread-3 org.pytorch.serve.metrics.MetricCollector - Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.11/site-packages/ts/metrics/metric_collector.py", line 27, in <module>
+    system_metrics.collect_all(sys.modules['ts.metrics.system_metrics'], arguments.gpu)
+  File "/opt/anaconda3/lib/python3.11/site-packages/ts/metrics/system_metrics.py", line 119, in collect_all
+    value(num_of_gpu)
+  File "/opt/anaconda3/lib/python3.11/site-packages/ts/metrics/system_metrics.py", line 64, in gpu_utilization
+    import nvgpu
+ModuleNotFoundError: No module named 'nvgpu'
+
+2025-02-10T20:34:30,485 [ERROR] Thread-4 org.pytorch.serve.metrics.MetricCollector - Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.11/site-packages/ts/metrics/metric_collector.py", line 27, in <module>
+    system_metrics.collect_all(sys.modules['ts.metrics.system_metrics'], arguments.gpu)
+  File "/opt/anaconda3/lib/python3.11/site-packages/ts/metrics/system_metrics.py", line 119, in collect_all
+    value(num_of_gpu)
+  File "/opt/anaconda3/lib/python3.11/site-packages/ts/metrics/system_metrics.py", line 64, in gpu_utilization
+    import nvgpu
+ModuleNotFoundError: No module named 'nvgpu'
+
+2025-02-10T20:34:30,485 [ERROR] Thread-4 org.pytorch.serve.metrics.MetricCollector - Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.11/site-packages/ts/metrics/metric_collector.py", line 27, in <module>
+    system_metrics.collect_all(sys.modules['ts.metrics.system_metrics'], arguments.gpu)
+  File "/opt/anaconda3/lib/python3.11/site-packages/ts/metrics/system_metrics.py", line 119, in collect_all
+    value(num_of_gpu)
+  File "/opt/anaconda3/lib/python3.11/site-packages/ts/metrics/system_metrics.py", line 64, in gpu_utilization
+    import nvgpu
+ModuleNotFoundError: No module named 'nvgpu'
+
+2025-02-10T20:35:30,518 [ERROR] Thread-5 org.pytorch.serve.metrics.MetricCollector - Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.11/site-packages/ts/metrics/metric_collector.py", line 27, in <module>
+    system_metrics.collect_all(sys.modules['ts.metrics.system_metrics'], arguments.gpu)
+  File "/opt/anaconda3/lib/python3.11/site-packages/ts/metrics/system_metrics.py", line 119, in collect_all
+    value(num_of_gpu)
+  File "/opt/anaconda3/lib/python3.11/site-packages/ts/metrics/system_metrics.py", line 64, in gpu_utilization
+    import nvgpu
+ModuleNotFoundError: No module named 'nvgpu'
+
+2025-02-10T20:35:30,518 [ERROR] Thread-5 org.pytorch.serve.metrics.MetricCollector - Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.11/site-packages/ts/metrics/metric_collector.py", line 27, in <module>
+    system_metrics.collect_all(sys.modules['ts.metrics.system_metrics'], arguments.gpu)
+  File "/opt/anaconda3/lib/python3.11/site-packages/ts/metrics/system_metrics.py", line 119, in collect_all
+    value(num_of_gpu)
+  File "/opt/anaconda3/lib/python3.11/site-packages/ts/metrics/system_metrics.py", line 64, in gpu_utilization
+    import nvgpu
+ModuleNotFoundError: No module named 'nvgpu'
+
+2025-02-10T20:36:30,493 [ERROR] Thread-6 org.pytorch.serve.metrics.MetricCollector - Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.11/site-packages/ts/metrics/metric_collector.py", line 27, in <module>
+    system_metrics.collect_all(sys.modules['ts.metrics.system_metrics'], arguments.gpu)
+  File "/opt/anaconda3/lib/python3.11/site-packages/ts/metrics/system_metrics.py", line 119, in collect_all
+    value(num_of_gpu)
+  File "/opt/anaconda3/lib/python3.11/site-packages/ts/metrics/system_metrics.py", line 64, in gpu_utilization
+    import nvgpu
+ModuleNotFoundError: No module named 'nvgpu'
+
+2025-02-10T20:36:30,493 [ERROR] Thread-6 org.pytorch.serve.metrics.MetricCollector - Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.11/site-packages/ts/metrics/metric_collector.py", line 27, in <module>
+    system_metrics.collect_all(sys.modules['ts.metrics.system_metrics'], arguments.gpu)
+  File "/opt/anaconda3/lib/python3.11/site-packages/ts/metrics/system_metrics.py", line 119, in collect_all
+    value(num_of_gpu)
+  File "/opt/anaconda3/lib/python3.11/site-packages/ts/metrics/system_metrics.py", line 64, in gpu_utilization
+    import nvgpu
+ModuleNotFoundError: No module named 'nvgpu'
+
+2025-02-10T20:37:30,476 [ERROR] Thread-7 org.pytorch.serve.metrics.MetricCollector - Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.11/site-packages/ts/metrics/metric_collector.py", line 27, in <module>
+    system_metrics.collect_all(sys.modules['ts.metrics.system_metrics'], arguments.gpu)
+  File "/opt/anaconda3/lib/python3.11/site-packages/ts/metrics/system_metrics.py", line 119, in collect_all
+    value(num_of_gpu)
+  File "/opt/anaconda3/lib/python3.11/site-packages/ts/metrics/system_metrics.py", line 64, in gpu_utilization
+    import nvgpu
+ModuleNotFoundError: No module named 'nvgpu'
+
+2025-02-10T20:37:30,476 [ERROR] Thread-7 org.pytorch.serve.metrics.MetricCollector - Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.11/site-packages/ts/metrics/metric_collector.py", line 27, in <module>
+    system_metrics.collect_all(sys.modules['ts.metrics.system_metrics'], arguments.gpu)
+  File "/opt/anaconda3/lib/python3.11/site-packages/ts/metrics/system_metrics.py", line 119, in collect_all
+    value(num_of_gpu)
+  File "/opt/anaconda3/lib/python3.11/site-packages/ts/metrics/system_metrics.py", line 64, in gpu_utilization
+    import nvgpu
+ModuleNotFoundError: No module named 'nvgpu'
+
+2025-02-10T20:38:30,493 [ERROR] Thread-8 org.pytorch.serve.metrics.MetricCollector - Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.11/site-packages/ts/metrics/metric_collector.py", line 27, in <module>
+    system_metrics.collect_all(sys.modules['ts.metrics.system_metrics'], arguments.gpu)
+  File "/opt/anaconda3/lib/python3.11/site-packages/ts/metrics/system_metrics.py", line 119, in collect_all
+    value(num_of_gpu)
+  File "/opt/anaconda3/lib/python3.11/site-packages/ts/metrics/system_metrics.py", line 64, in gpu_utilization
+    import nvgpu
+ModuleNotFoundError: No module named 'nvgpu'
+
+2025-02-10T20:38:30,493 [ERROR] Thread-8 org.pytorch.serve.metrics.MetricCollector - Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.11/site-packages/ts/metrics/metric_collector.py", line 27, in <module>
+    system_metrics.collect_all(sys.modules['ts.metrics.system_metrics'], arguments.gpu)
+  File "/opt/anaconda3/lib/python3.11/site-packages/ts/metrics/system_metrics.py", line 119, in collect_all
+    value(num_of_gpu)
+  File "/opt/anaconda3/lib/python3.11/site-packages/ts/metrics/system_metrics.py", line 64, in gpu_utilization
+    import nvgpu
+ModuleNotFoundError: No module named 'nvgpu'
+
+2025-02-10T20:39:30,487 [ERROR] Thread-9 org.pytorch.serve.metrics.MetricCollector - Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.11/site-packages/ts/metrics/metric_collector.py", line 27, in <module>
+    system_metrics.collect_all(sys.modules['ts.metrics.system_metrics'], arguments.gpu)
+  File "/opt/anaconda3/lib/python3.11/site-packages/ts/metrics/system_metrics.py", line 119, in collect_all
+    value(num_of_gpu)
+  File "/opt/anaconda3/lib/python3.11/site-packages/ts/metrics/system_metrics.py", line 64, in gpu_utilization
+    import nvgpu
+ModuleNotFoundError: No module named 'nvgpu'
+
+2025-02-10T20:39:30,487 [ERROR] Thread-9 org.pytorch.serve.metrics.MetricCollector - Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.11/site-packages/ts/metrics/metric_collector.py", line 27, in <module>
+    system_metrics.collect_all(sys.modules['ts.metrics.system_metrics'], arguments.gpu)
+  File "/opt/anaconda3/lib/python3.11/site-packages/ts/metrics/system_metrics.py", line 119, in collect_all
+    value(num_of_gpu)
+  File "/opt/anaconda3/lib/python3.11/site-packages/ts/metrics/system_metrics.py", line 64, in gpu_utilization
+    import nvgpu
+ModuleNotFoundError: No module named 'nvgpu'
+
+2025-02-10T20:40:30,496 [ERROR] Thread-10 org.pytorch.serve.metrics.MetricCollector - Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.11/site-packages/ts/metrics/metric_collector.py", line 27, in <module>
+    system_metrics.collect_all(sys.modules['ts.metrics.system_metrics'], arguments.gpu)
+  File "/opt/anaconda3/lib/python3.11/site-packages/ts/metrics/system_metrics.py", line 119, in collect_all
+    value(num_of_gpu)
+  File "/opt/anaconda3/lib/python3.11/site-packages/ts/metrics/system_metrics.py", line 64, in gpu_utilization
+    import nvgpu
+ModuleNotFoundError: No module named 'nvgpu'
+
+2025-02-10T20:40:30,496 [ERROR] Thread-10 org.pytorch.serve.metrics.MetricCollector - Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.11/site-packages/ts/metrics/metric_collector.py", line 27, in <module>
+    system_metrics.collect_all(sys.modules['ts.metrics.system_metrics'], arguments.gpu)
+  File "/opt/anaconda3/lib/python3.11/site-packages/ts/metrics/system_metrics.py", line 119, in collect_all
+    value(num_of_gpu)
+  File "/opt/anaconda3/lib/python3.11/site-packages/ts/metrics/system_metrics.py", line 64, in gpu_utilization
+    import nvgpu
+ModuleNotFoundError: No module named 'nvgpu'
+
+2025-02-10T20:41:30,485 [ERROR] Thread-11 org.pytorch.serve.metrics.MetricCollector - Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.11/site-packages/ts/metrics/metric_collector.py", line 27, in <module>
+    system_metrics.collect_all(sys.modules['ts.metrics.system_metrics'], arguments.gpu)
+  File "/opt/anaconda3/lib/python3.11/site-packages/ts/metrics/system_metrics.py", line 119, in collect_all
+    value(num_of_gpu)
+  File "/opt/anaconda3/lib/python3.11/site-packages/ts/metrics/system_metrics.py", line 64, in gpu_utilization
+    import nvgpu
+ModuleNotFoundError: No module named 'nvgpu'
+
+2025-02-10T20:41:30,485 [ERROR] Thread-11 org.pytorch.serve.metrics.MetricCollector - Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.11/site-packages/ts/metrics/metric_collector.py", line 27, in <module>
+    system_metrics.collect_all(sys.modules['ts.metrics.system_metrics'], arguments.gpu)
+  File "/opt/anaconda3/lib/python3.11/site-packages/ts/metrics/system_metrics.py", line 119, in collect_all
+    value(num_of_gpu)
+  File "/opt/anaconda3/lib/python3.11/site-packages/ts/metrics/system_metrics.py", line 64, in gpu_utilization
+    import nvgpu
+ModuleNotFoundError: No module named 'nvgpu'
+
+2025-02-10T20:42:30,504 [ERROR] Thread-12 org.pytorch.serve.metrics.MetricCollector - Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.11/site-packages/ts/metrics/metric_collector.py", line 27, in <module>
+    system_metrics.collect_all(sys.modules['ts.metrics.system_metrics'], arguments.gpu)
+  File "/opt/anaconda3/lib/python3.11/site-packages/ts/metrics/system_metrics.py", line 119, in collect_all
+    value(num_of_gpu)
+  File "/opt/anaconda3/lib/python3.11/site-packages/ts/metrics/system_metrics.py", line 64, in gpu_utilization
+    import nvgpu
+ModuleNotFoundError: No module named 'nvgpu'
+
+2025-02-10T20:42:30,504 [ERROR] Thread-12 org.pytorch.serve.metrics.MetricCollector - Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.11/site-packages/ts/metrics/metric_collector.py", line 27, in <module>
+    system_metrics.collect_all(sys.modules['ts.metrics.system_metrics'], arguments.gpu)
+  File "/opt/anaconda3/lib/python3.11/site-packages/ts/metrics/system_metrics.py", line 119, in collect_all
+    value(num_of_gpu)
+  File "/opt/anaconda3/lib/python3.11/site-packages/ts/metrics/system_metrics.py", line 64, in gpu_utilization
+    import nvgpu
+ModuleNotFoundError: No module named 'nvgpu'
+
+2025-02-10T20:43:30,495 [ERROR] Thread-13 org.pytorch.serve.metrics.MetricCollector - Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.11/site-packages/ts/metrics/metric_collector.py", line 27, in <module>
+    system_metrics.collect_all(sys.modules['ts.metrics.system_metrics'], arguments.gpu)
+  File "/opt/anaconda3/lib/python3.11/site-packages/ts/metrics/system_metrics.py", line 119, in collect_all
+    value(num_of_gpu)
+  File "/opt/anaconda3/lib/python3.11/site-packages/ts/metrics/system_metrics.py", line 64, in gpu_utilization
+    import nvgpu
+ModuleNotFoundError: No module named 'nvgpu'
+
+2025-02-10T20:43:30,495 [ERROR] Thread-13 org.pytorch.serve.metrics.MetricCollector - Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.11/site-packages/ts/metrics/metric_collector.py", line 27, in <module>
+    system_metrics.collect_all(sys.modules['ts.metrics.system_metrics'], arguments.gpu)
+  File "/opt/anaconda3/lib/python3.11/site-packages/ts/metrics/system_metrics.py", line 119, in collect_all
+    value(num_of_gpu)
+  File "/opt/anaconda3/lib/python3.11/site-packages/ts/metrics/system_metrics.py", line 64, in gpu_utilization
+    import nvgpu
+ModuleNotFoundError: No module named 'nvgpu'
+
+2025-02-10T20:44:30,487 [ERROR] Thread-14 org.pytorch.serve.metrics.MetricCollector - Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.11/site-packages/ts/metrics/metric_collector.py", line 27, in <module>
+    system_metrics.collect_all(sys.modules['ts.metrics.system_metrics'], arguments.gpu)
+  File "/opt/anaconda3/lib/python3.11/site-packages/ts/metrics/system_metrics.py", line 119, in collect_all
+    value(num_of_gpu)
+  File "/opt/anaconda3/lib/python3.11/site-packages/ts/metrics/system_metrics.py", line 64, in gpu_utilization
+    import nvgpu
+ModuleNotFoundError: No module named 'nvgpu'
+
+2025-02-10T20:44:30,487 [ERROR] Thread-14 org.pytorch.serve.metrics.MetricCollector - Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.11/site-packages/ts/metrics/metric_collector.py", line 27, in <module>
+    system_metrics.collect_all(sys.modules['ts.metrics.system_metrics'], arguments.gpu)
+  File "/opt/anaconda3/lib/python3.11/site-packages/ts/metrics/system_metrics.py", line 119, in collect_all
+    value(num_of_gpu)
+  File "/opt/anaconda3/lib/python3.11/site-packages/ts/metrics/system_metrics.py", line 64, in gpu_utilization
+    import nvgpu
+ModuleNotFoundError: No module named 'nvgpu'
+
+2025-02-10T20:45:30,463 [ERROR] Thread-15 org.pytorch.serve.metrics.MetricCollector - Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.11/site-packages/ts/metrics/metric_collector.py", line 27, in <module>
+    system_metrics.collect_all(sys.modules['ts.metrics.system_metrics'], arguments.gpu)
+  File "/opt/anaconda3/lib/python3.11/site-packages/ts/metrics/system_metrics.py", line 119, in collect_all
+    value(num_of_gpu)
+  File "/opt/anaconda3/lib/python3.11/site-packages/ts/metrics/system_metrics.py", line 64, in gpu_utilization
+    import nvgpu
+ModuleNotFoundError: No module named 'nvgpu'
+
+2025-02-10T20:45:30,463 [ERROR] Thread-15 org.pytorch.serve.metrics.MetricCollector - Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.11/site-packages/ts/metrics/metric_collector.py", line 27, in <module>
+    system_metrics.collect_all(sys.modules['ts.metrics.system_metrics'], arguments.gpu)
+  File "/opt/anaconda3/lib/python3.11/site-packages/ts/metrics/system_metrics.py", line 119, in collect_all
+    value(num_of_gpu)
+  File "/opt/anaconda3/lib/python3.11/site-packages/ts/metrics/system_metrics.py", line 64, in gpu_utilization
+    import nvgpu
+ModuleNotFoundError: No module named 'nvgpu'
+
+2025-02-10T20:45:48,547 [WARN ] main org.pytorch.serve.util.ConfigManager - Your torchserve instance can access any URL to load models. When deploying to production, make sure to limit the set of allowed_urls in config.properties
+2025-02-10T20:45:48,547 [WARN ] main org.pytorch.serve.util.ConfigManager - Your torchserve instance can access any URL to load models. When deploying to production, make sure to limit the set of allowed_urls in config.properties
+2025-02-10T20:45:48,554 [INFO ] main org.pytorch.serve.servingsdk.impl.PluginsManager - Initializing plugins manager...
+2025-02-10T20:45:48,554 [INFO ] main org.pytorch.serve.servingsdk.impl.PluginsManager - Initializing plugins manager...
+2025-02-10T20:45:48,585 [INFO ] main org.pytorch.serve.metrics.configuration.MetricConfiguration - Successfully loaded metrics configuration from /opt/anaconda3/lib/python3.11/site-packages/ts/configs/metrics.yaml
+2025-02-10T20:45:48,585 [INFO ] main org.pytorch.serve.metrics.configuration.MetricConfiguration - Successfully loaded metrics configuration from /opt/anaconda3/lib/python3.11/site-packages/ts/configs/metrics.yaml
+2025-02-10T20:45:48,620 [INFO ] main org.pytorch.serve.ModelServer - 
+Torchserve version: 0.12.0
+TS Home: /opt/anaconda3/lib/python3.11/site-packages
+Current directory: /Users/thanavut/Developer/Capstone/Root-Will-Tear/backend
+Temp directory: /var/folders/c0/sd64djxn1hj2_kvzzktnk4900000gn/T/
+Metrics config path: /opt/anaconda3/lib/python3.11/site-packages/ts/configs/metrics.yaml
+Number of GPUs: 14
+Number of CPUs: 8
+Max heap size: 4096 M
+Python executable: /opt/anaconda3/bin/python
+Config file: config.properties
+Inference address: http://127.0.0.1:8085
+Management address: http://127.0.0.1:8081
+Metrics address: http://127.0.0.1:8082
+Model Store: /Users/thanavut/Developer/Capstone/Root-Will-Tear/backend/model_store
+Initial Models: N/A
+Log dir: /Users/thanavut/Developer/Capstone/Root-Will-Tear/backend/logs
+Metrics dir: /Users/thanavut/Developer/Capstone/Root-Will-Tear/backend/logs
+Netty threads: 0
+Netty client threads: 0
+Default workers per model: 14
+Blacklist Regex: N/A
+Maximum Response Size: 6553500
+Maximum Request Size: 6553500
+Limit Maximum Image Pixels: true
+Prefer direct buffer: false
+Allowed Urls: [file://.*|http(s)?://.*]
+Custom python dependency for model allowed: false
+Enable metrics API: true
+Metrics mode: LOG
+Disable system metrics: false
+Workflow Store: /Users/thanavut/Developer/Capstone/Root-Will-Tear/backend/model_store
+CPP log config: N/A
+Model config: N/A
+System metrics command: default
+Model API enabled: true
+2025-02-10T20:45:48,620 [INFO ] main org.pytorch.serve.ModelServer - 
+Torchserve version: 0.12.0
+TS Home: /opt/anaconda3/lib/python3.11/site-packages
+Current directory: /Users/thanavut/Developer/Capstone/Root-Will-Tear/backend
+Temp directory: /var/folders/c0/sd64djxn1hj2_kvzzktnk4900000gn/T/
+Metrics config path: /opt/anaconda3/lib/python3.11/site-packages/ts/configs/metrics.yaml
+Number of GPUs: 14
+Number of CPUs: 8
+Max heap size: 4096 M
+Python executable: /opt/anaconda3/bin/python
+Config file: config.properties
+Inference address: http://127.0.0.1:8085
+Management address: http://127.0.0.1:8081
+Metrics address: http://127.0.0.1:8082
+Model Store: /Users/thanavut/Developer/Capstone/Root-Will-Tear/backend/model_store
+Initial Models: N/A
+Log dir: /Users/thanavut/Developer/Capstone/Root-Will-Tear/backend/logs
+Metrics dir: /Users/thanavut/Developer/Capstone/Root-Will-Tear/backend/logs
+Netty threads: 0
+Netty client threads: 0
+Default workers per model: 14
+Blacklist Regex: N/A
+Maximum Response Size: 6553500
+Maximum Request Size: 6553500
+Limit Maximum Image Pixels: true
+Prefer direct buffer: false
+Allowed Urls: [file://.*|http(s)?://.*]
+Custom python dependency for model allowed: false
+Enable metrics API: true
+Metrics mode: LOG
+Disable system metrics: false
+Workflow Store: /Users/thanavut/Developer/Capstone/Root-Will-Tear/backend/model_store
+CPP log config: N/A
+Model config: N/A
+System metrics command: default
+Model API enabled: true
+2025-02-10T20:45:48,626 [INFO ] main org.pytorch.serve.servingsdk.impl.PluginsManager -  Loading snapshot serializer plugin...
+2025-02-10T20:45:48,626 [INFO ] main org.pytorch.serve.servingsdk.impl.PluginsManager -  Loading snapshot serializer plugin...
+2025-02-10T20:45:48,637 [INFO ] main org.pytorch.serve.ModelServer - Initialize Inference server with: NioServerSocketChannel.
+2025-02-10T20:45:48,637 [INFO ] main org.pytorch.serve.ModelServer - Initialize Inference server with: NioServerSocketChannel.
+2025-02-10T20:45:48,676 [INFO ] main org.pytorch.serve.ModelServer - Inference API bind to: http://127.0.0.1:8085
+2025-02-10T20:45:48,676 [INFO ] main org.pytorch.serve.ModelServer - Inference API bind to: http://127.0.0.1:8085
+2025-02-10T20:45:48,677 [INFO ] main org.pytorch.serve.ModelServer - Initialize Management server with: NioServerSocketChannel.
+2025-02-10T20:45:48,677 [INFO ] main org.pytorch.serve.ModelServer - Initialize Management server with: NioServerSocketChannel.
+2025-02-10T20:45:48,677 [INFO ] main org.pytorch.serve.ModelServer - Management API bind to: http://127.0.0.1:8081
+2025-02-10T20:45:48,677 [INFO ] main org.pytorch.serve.ModelServer - Management API bind to: http://127.0.0.1:8081
+2025-02-10T20:45:48,677 [INFO ] main org.pytorch.serve.ModelServer - Initialize Metrics server with: NioServerSocketChannel.
+2025-02-10T20:45:48,677 [INFO ] main org.pytorch.serve.ModelServer - Initialize Metrics server with: NioServerSocketChannel.
+2025-02-10T20:45:48,678 [INFO ] main org.pytorch.serve.ModelServer - Metrics API bind to: http://127.0.0.1:8082
+2025-02-10T20:45:48,678 [INFO ] main org.pytorch.serve.ModelServer - Metrics API bind to: http://127.0.0.1:8082
+2025-02-10T20:45:48,832 [ERROR] Thread-1 org.pytorch.serve.metrics.MetricCollector - Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.11/site-packages/ts/metrics/metric_collector.py", line 27, in <module>
+    system_metrics.collect_all(sys.modules['ts.metrics.system_metrics'], arguments.gpu)
+  File "/opt/anaconda3/lib/python3.11/site-packages/ts/metrics/system_metrics.py", line 119, in collect_all
+    value(num_of_gpu)
+  File "/opt/anaconda3/lib/python3.11/site-packages/ts/metrics/system_metrics.py", line 64, in gpu_utilization
+    import nvgpu
+ModuleNotFoundError: No module named 'nvgpu'
+
+2025-02-10T20:45:48,832 [ERROR] Thread-1 org.pytorch.serve.metrics.MetricCollector - Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.11/site-packages/ts/metrics/metric_collector.py", line 27, in <module>
+    system_metrics.collect_all(sys.modules['ts.metrics.system_metrics'], arguments.gpu)
+  File "/opt/anaconda3/lib/python3.11/site-packages/ts/metrics/system_metrics.py", line 119, in collect_all
+    value(num_of_gpu)
+  File "/opt/anaconda3/lib/python3.11/site-packages/ts/metrics/system_metrics.py", line 64, in gpu_utilization
+    import nvgpu
+ModuleNotFoundError: No module named 'nvgpu'
+
+2025-02-10T20:46:20,220 [WARN ] main org.pytorch.serve.util.ConfigManager - Your torchserve instance can access any URL to load models. When deploying to production, make sure to limit the set of allowed_urls in config.properties
+2025-02-10T20:46:20,220 [WARN ] main org.pytorch.serve.util.ConfigManager - Your torchserve instance can access any URL to load models. When deploying to production, make sure to limit the set of allowed_urls in config.properties
+2025-02-10T20:46:20,232 [INFO ] main org.pytorch.serve.servingsdk.impl.PluginsManager - Initializing plugins manager...
+2025-02-10T20:46:20,232 [INFO ] main org.pytorch.serve.servingsdk.impl.PluginsManager - Initializing plugins manager...
+2025-02-10T20:46:20,266 [INFO ] main org.pytorch.serve.metrics.configuration.MetricConfiguration - Successfully loaded metrics configuration from /opt/anaconda3/lib/python3.11/site-packages/ts/configs/metrics.yaml
+2025-02-10T20:46:20,266 [INFO ] main org.pytorch.serve.metrics.configuration.MetricConfiguration - Successfully loaded metrics configuration from /opt/anaconda3/lib/python3.11/site-packages/ts/configs/metrics.yaml
+2025-02-10T20:46:20,308 [INFO ] main org.pytorch.serve.ModelServer - 
+Torchserve version: 0.12.0
+TS Home: /opt/anaconda3/lib/python3.11/site-packages
+Current directory: /Users/thanavut/Developer/Capstone/Root-Will-Tear/backend
+Temp directory: /var/folders/c0/sd64djxn1hj2_kvzzktnk4900000gn/T/
+Metrics config path: /opt/anaconda3/lib/python3.11/site-packages/ts/configs/metrics.yaml
+Number of GPUs: 14
+Number of CPUs: 8
+Max heap size: 4096 M
+Python executable: /opt/anaconda3/bin/python
+Config file: config.properties
+Inference address: http://127.0.0.1:8085
+Management address: http://127.0.0.1:8081
+Metrics address: http://127.0.0.1:8082
+Model Store: /Users/thanavut/Developer/Capstone/Root-Will-Tear/backend/model_store
+Initial Models: N/A
+Log dir: /Users/thanavut/Developer/Capstone/Root-Will-Tear/backend/logs
+Metrics dir: /Users/thanavut/Developer/Capstone/Root-Will-Tear/backend/logs
+Netty threads: 0
+Netty client threads: 0
+Default workers per model: 14
+Blacklist Regex: N/A
+Maximum Response Size: 6553500
+Maximum Request Size: 6553500
+Limit Maximum Image Pixels: true
+Prefer direct buffer: false
+Allowed Urls: [file://.*|http(s)?://.*]
+Custom python dependency for model allowed: false
+Enable metrics API: true
+Metrics mode: LOG
+Disable system metrics: false
+Workflow Store: /Users/thanavut/Developer/Capstone/Root-Will-Tear/backend/model_store
+CPP log config: N/A
+Model config: N/A
+System metrics command: default
+Model API enabled: true
+2025-02-10T20:46:20,308 [INFO ] main org.pytorch.serve.ModelServer - 
+Torchserve version: 0.12.0
+TS Home: /opt/anaconda3/lib/python3.11/site-packages
+Current directory: /Users/thanavut/Developer/Capstone/Root-Will-Tear/backend
+Temp directory: /var/folders/c0/sd64djxn1hj2_kvzzktnk4900000gn/T/
+Metrics config path: /opt/anaconda3/lib/python3.11/site-packages/ts/configs/metrics.yaml
+Number of GPUs: 14
+Number of CPUs: 8
+Max heap size: 4096 M
+Python executable: /opt/anaconda3/bin/python
+Config file: config.properties
+Inference address: http://127.0.0.1:8085
+Management address: http://127.0.0.1:8081
+Metrics address: http://127.0.0.1:8082
+Model Store: /Users/thanavut/Developer/Capstone/Root-Will-Tear/backend/model_store
+Initial Models: N/A
+Log dir: /Users/thanavut/Developer/Capstone/Root-Will-Tear/backend/logs
+Metrics dir: /Users/thanavut/Developer/Capstone/Root-Will-Tear/backend/logs
+Netty threads: 0
+Netty client threads: 0
+Default workers per model: 14
+Blacklist Regex: N/A
+Maximum Response Size: 6553500
+Maximum Request Size: 6553500
+Limit Maximum Image Pixels: true
+Prefer direct buffer: false
+Allowed Urls: [file://.*|http(s)?://.*]
+Custom python dependency for model allowed: false
+Enable metrics API: true
+Metrics mode: LOG
+Disable system metrics: false
+Workflow Store: /Users/thanavut/Developer/Capstone/Root-Will-Tear/backend/model_store
+CPP log config: N/A
+Model config: N/A
+System metrics command: default
+Model API enabled: true
+2025-02-10T20:46:20,314 [INFO ] main org.pytorch.serve.servingsdk.impl.PluginsManager -  Loading snapshot serializer plugin...
+2025-02-10T20:46:20,314 [INFO ] main org.pytorch.serve.servingsdk.impl.PluginsManager -  Loading snapshot serializer plugin...
+2025-02-10T20:46:20,327 [INFO ] main org.pytorch.serve.ModelServer - Initialize Inference server with: NioServerSocketChannel.
+2025-02-10T20:46:20,327 [INFO ] main org.pytorch.serve.ModelServer - Initialize Inference server with: NioServerSocketChannel.
+2025-02-10T20:46:20,373 [INFO ] main org.pytorch.serve.ModelServer - Inference API bind to: http://127.0.0.1:8085
+2025-02-10T20:46:20,373 [INFO ] main org.pytorch.serve.ModelServer - Inference API bind to: http://127.0.0.1:8085
+2025-02-10T20:46:20,373 [INFO ] main org.pytorch.serve.ModelServer - Initialize Management server with: NioServerSocketChannel.
+2025-02-10T20:46:20,373 [INFO ] main org.pytorch.serve.ModelServer - Initialize Management server with: NioServerSocketChannel.
+2025-02-10T20:46:20,374 [INFO ] main org.pytorch.serve.ModelServer - Management API bind to: http://127.0.0.1:8081
+2025-02-10T20:46:20,374 [INFO ] main org.pytorch.serve.ModelServer - Management API bind to: http://127.0.0.1:8081
+2025-02-10T20:46:20,374 [INFO ] main org.pytorch.serve.ModelServer - Initialize Metrics server with: NioServerSocketChannel.
+2025-02-10T20:46:20,374 [INFO ] main org.pytorch.serve.ModelServer - Initialize Metrics server with: NioServerSocketChannel.
+2025-02-10T20:46:20,374 [INFO ] main org.pytorch.serve.ModelServer - Metrics API bind to: http://127.0.0.1:8082
+2025-02-10T20:46:20,374 [INFO ] main org.pytorch.serve.ModelServer - Metrics API bind to: http://127.0.0.1:8082
+2025-02-10T20:46:20,545 [ERROR] Thread-1 org.pytorch.serve.metrics.MetricCollector - Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.11/site-packages/ts/metrics/metric_collector.py", line 27, in <module>
+    system_metrics.collect_all(sys.modules['ts.metrics.system_metrics'], arguments.gpu)
+  File "/opt/anaconda3/lib/python3.11/site-packages/ts/metrics/system_metrics.py", line 119, in collect_all
+    value(num_of_gpu)
+  File "/opt/anaconda3/lib/python3.11/site-packages/ts/metrics/system_metrics.py", line 64, in gpu_utilization
+    import nvgpu
+ModuleNotFoundError: No module named 'nvgpu'
+
+2025-02-10T20:46:20,545 [ERROR] Thread-1 org.pytorch.serve.metrics.MetricCollector - Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.11/site-packages/ts/metrics/metric_collector.py", line 27, in <module>
+    system_metrics.collect_all(sys.modules['ts.metrics.system_metrics'], arguments.gpu)
+  File "/opt/anaconda3/lib/python3.11/site-packages/ts/metrics/system_metrics.py", line 119, in collect_all
+    value(num_of_gpu)
+  File "/opt/anaconda3/lib/python3.11/site-packages/ts/metrics/system_metrics.py", line 64, in gpu_utilization
+    import nvgpu
+ModuleNotFoundError: No module named 'nvgpu'
+
+2025-02-10T20:48:18,387 [WARN ] main org.pytorch.serve.util.ConfigManager - Your torchserve instance can access any URL to load models. When deploying to production, make sure to limit the set of allowed_urls in config.properties
+2025-02-10T20:48:18,387 [WARN ] main org.pytorch.serve.util.ConfigManager - Your torchserve instance can access any URL to load models. When deploying to production, make sure to limit the set of allowed_urls in config.properties
+2025-02-10T20:48:18,399 [INFO ] main org.pytorch.serve.servingsdk.impl.PluginsManager - Initializing plugins manager...
+2025-02-10T20:48:18,399 [INFO ] main org.pytorch.serve.servingsdk.impl.PluginsManager - Initializing plugins manager...
+2025-02-10T20:48:18,434 [INFO ] main org.pytorch.serve.metrics.configuration.MetricConfiguration - Successfully loaded metrics configuration from /opt/anaconda3/lib/python3.11/site-packages/ts/configs/metrics.yaml
+2025-02-10T20:48:18,434 [INFO ] main org.pytorch.serve.metrics.configuration.MetricConfiguration - Successfully loaded metrics configuration from /opt/anaconda3/lib/python3.11/site-packages/ts/configs/metrics.yaml
+2025-02-10T20:48:18,478 [INFO ] main org.pytorch.serve.ModelServer - 
+Torchserve version: 0.12.0
+TS Home: /opt/anaconda3/lib/python3.11/site-packages
+Current directory: /Users/thanavut/Developer/Capstone/Root-Will-Tear/backend
+Temp directory: /var/folders/c0/sd64djxn1hj2_kvzzktnk4900000gn/T/
+Metrics config path: /opt/anaconda3/lib/python3.11/site-packages/ts/configs/metrics.yaml
+Number of GPUs: 14
+Number of CPUs: 8
+Max heap size: 4096 M
+Python executable: /opt/anaconda3/bin/python
+Config file: config.properties
+Inference address: http://127.0.0.1:8085
+Management address: http://127.0.0.1:8081
+Metrics address: http://127.0.0.1:8082
+Model Store: /Users/thanavut/Developer/Capstone/Root-Will-Tear/backend/model_store
+Initial Models: N/A
+Log dir: /Users/thanavut/Developer/Capstone/Root-Will-Tear/backend/logs
+Metrics dir: /Users/thanavut/Developer/Capstone/Root-Will-Tear/backend/logs
+Netty threads: 0
+Netty client threads: 0
+Default workers per model: 14
+Blacklist Regex: N/A
+Maximum Response Size: 6553500
+Maximum Request Size: 6553500
+Limit Maximum Image Pixels: true
+Prefer direct buffer: false
+Allowed Urls: [file://.*|http(s)?://.*]
+Custom python dependency for model allowed: false
+Enable metrics API: true
+Metrics mode: LOG
+Disable system metrics: false
+Workflow Store: /Users/thanavut/Developer/Capstone/Root-Will-Tear/backend/model_store
+CPP log config: N/A
+Model config: N/A
+System metrics command: default
+Model API enabled: true
+2025-02-10T20:48:18,478 [INFO ] main org.pytorch.serve.ModelServer - 
+Torchserve version: 0.12.0
+TS Home: /opt/anaconda3/lib/python3.11/site-packages
+Current directory: /Users/thanavut/Developer/Capstone/Root-Will-Tear/backend
+Temp directory: /var/folders/c0/sd64djxn1hj2_kvzzktnk4900000gn/T/
+Metrics config path: /opt/anaconda3/lib/python3.11/site-packages/ts/configs/metrics.yaml
+Number of GPUs: 14
+Number of CPUs: 8
+Max heap size: 4096 M
+Python executable: /opt/anaconda3/bin/python
+Config file: config.properties
+Inference address: http://127.0.0.1:8085
+Management address: http://127.0.0.1:8081
+Metrics address: http://127.0.0.1:8082
+Model Store: /Users/thanavut/Developer/Capstone/Root-Will-Tear/backend/model_store
+Initial Models: N/A
+Log dir: /Users/thanavut/Developer/Capstone/Root-Will-Tear/backend/logs
+Metrics dir: /Users/thanavut/Developer/Capstone/Root-Will-Tear/backend/logs
+Netty threads: 0
+Netty client threads: 0
+Default workers per model: 14
+Blacklist Regex: N/A
+Maximum Response Size: 6553500
+Maximum Request Size: 6553500
+Limit Maximum Image Pixels: true
+Prefer direct buffer: false
+Allowed Urls: [file://.*|http(s)?://.*]
+Custom python dependency for model allowed: false
+Enable metrics API: true
+Metrics mode: LOG
+Disable system metrics: false
+Workflow Store: /Users/thanavut/Developer/Capstone/Root-Will-Tear/backend/model_store
+CPP log config: N/A
+Model config: N/A
+System metrics command: default
+Model API enabled: true
+2025-02-10T20:48:18,485 [INFO ] main org.pytorch.serve.servingsdk.impl.PluginsManager -  Loading snapshot serializer plugin...
+2025-02-10T20:48:18,485 [INFO ] main org.pytorch.serve.servingsdk.impl.PluginsManager -  Loading snapshot serializer plugin...
+2025-02-10T20:48:18,503 [INFO ] main org.pytorch.serve.ModelServer - Initialize Inference server with: NioServerSocketChannel.
+2025-02-10T20:48:18,503 [INFO ] main org.pytorch.serve.ModelServer - Initialize Inference server with: NioServerSocketChannel.
+2025-02-10T20:48:18,553 [INFO ] main org.pytorch.serve.ModelServer - Inference API bind to: http://127.0.0.1:8085
+2025-02-10T20:48:18,553 [INFO ] main org.pytorch.serve.ModelServer - Inference API bind to: http://127.0.0.1:8085
+2025-02-10T20:48:18,553 [INFO ] main org.pytorch.serve.ModelServer - Initialize Management server with: NioServerSocketChannel.
+2025-02-10T20:48:18,553 [INFO ] main org.pytorch.serve.ModelServer - Initialize Management server with: NioServerSocketChannel.
+2025-02-10T20:48:18,553 [INFO ] main org.pytorch.serve.ModelServer - Management API bind to: http://127.0.0.1:8081
+2025-02-10T20:48:18,553 [INFO ] main org.pytorch.serve.ModelServer - Management API bind to: http://127.0.0.1:8081
+2025-02-10T20:48:18,554 [INFO ] main org.pytorch.serve.ModelServer - Initialize Metrics server with: NioServerSocketChannel.
+2025-02-10T20:48:18,554 [INFO ] main org.pytorch.serve.ModelServer - Initialize Metrics server with: NioServerSocketChannel.
+2025-02-10T20:48:18,554 [INFO ] main org.pytorch.serve.ModelServer - Metrics API bind to: http://127.0.0.1:8082
+2025-02-10T20:48:18,554 [INFO ] main org.pytorch.serve.ModelServer - Metrics API bind to: http://127.0.0.1:8082
+2025-02-10T20:48:18,711 [ERROR] Thread-1 org.pytorch.serve.metrics.MetricCollector - Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.11/site-packages/ts/metrics/metric_collector.py", line 27, in <module>
+    system_metrics.collect_all(sys.modules['ts.metrics.system_metrics'], arguments.gpu)
+  File "/opt/anaconda3/lib/python3.11/site-packages/ts/metrics/system_metrics.py", line 119, in collect_all
+    value(num_of_gpu)
+  File "/opt/anaconda3/lib/python3.11/site-packages/ts/metrics/system_metrics.py", line 64, in gpu_utilization
+    import nvgpu
+ModuleNotFoundError: No module named 'nvgpu'
+
+2025-02-10T20:48:18,711 [ERROR] Thread-1 org.pytorch.serve.metrics.MetricCollector - Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.11/site-packages/ts/metrics/metric_collector.py", line 27, in <module>
+    system_metrics.collect_all(sys.modules['ts.metrics.system_metrics'], arguments.gpu)
+  File "/opt/anaconda3/lib/python3.11/site-packages/ts/metrics/system_metrics.py", line 119, in collect_all
+    value(num_of_gpu)
+  File "/opt/anaconda3/lib/python3.11/site-packages/ts/metrics/system_metrics.py", line 64, in gpu_utilization
+    import nvgpu
+ModuleNotFoundError: No module named 'nvgpu'
+
+2025-02-10T20:49:18,764 [ERROR] Thread-2 org.pytorch.serve.metrics.MetricCollector - Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.11/site-packages/ts/metrics/metric_collector.py", line 27, in <module>
+    system_metrics.collect_all(sys.modules['ts.metrics.system_metrics'], arguments.gpu)
+  File "/opt/anaconda3/lib/python3.11/site-packages/ts/metrics/system_metrics.py", line 119, in collect_all
+    value(num_of_gpu)
+  File "/opt/anaconda3/lib/python3.11/site-packages/ts/metrics/system_metrics.py", line 64, in gpu_utilization
+    import nvgpu
+ModuleNotFoundError: No module named 'nvgpu'
+
+2025-02-10T20:49:18,764 [ERROR] Thread-2 org.pytorch.serve.metrics.MetricCollector - Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.11/site-packages/ts/metrics/metric_collector.py", line 27, in <module>
+    system_metrics.collect_all(sys.modules['ts.metrics.system_metrics'], arguments.gpu)
+  File "/opt/anaconda3/lib/python3.11/site-packages/ts/metrics/system_metrics.py", line 119, in collect_all
+    value(num_of_gpu)
+  File "/opt/anaconda3/lib/python3.11/site-packages/ts/metrics/system_metrics.py", line 64, in gpu_utilization
+    import nvgpu
+ModuleNotFoundError: No module named 'nvgpu'
+
+2025-02-10T20:51:59,076 [WARN ] main org.pytorch.serve.util.ConfigManager - Your torchserve instance can access any URL to load models. When deploying to production, make sure to limit the set of allowed_urls in config.properties
+2025-02-10T20:51:59,076 [WARN ] main org.pytorch.serve.util.ConfigManager - Your torchserve instance can access any URL to load models. When deploying to production, make sure to limit the set of allowed_urls in config.properties
+2025-02-10T20:51:59,088 [INFO ] main org.pytorch.serve.servingsdk.impl.PluginsManager - Initializing plugins manager...
+2025-02-10T20:51:59,088 [INFO ] main org.pytorch.serve.servingsdk.impl.PluginsManager - Initializing plugins manager...
+2025-02-10T20:51:59,124 [INFO ] main org.pytorch.serve.metrics.configuration.MetricConfiguration - Successfully loaded metrics configuration from /opt/anaconda3/lib/python3.11/site-packages/ts/configs/metrics.yaml
+2025-02-10T20:51:59,124 [INFO ] main org.pytorch.serve.metrics.configuration.MetricConfiguration - Successfully loaded metrics configuration from /opt/anaconda3/lib/python3.11/site-packages/ts/configs/metrics.yaml
+2025-02-10T20:51:59,166 [INFO ] main org.pytorch.serve.ModelServer - 
+Torchserve version: 0.12.0
+TS Home: /opt/anaconda3/lib/python3.11/site-packages
+Current directory: /Users/thanavut/Developer/Capstone/Root-Will-Tear/backend
+Temp directory: /var/folders/c0/sd64djxn1hj2_kvzzktnk4900000gn/T/
+Metrics config path: /opt/anaconda3/lib/python3.11/site-packages/ts/configs/metrics.yaml
+Number of GPUs: 14
+Number of CPUs: 8
+Max heap size: 4096 M
+Python executable: /opt/anaconda3/bin/python
+Config file: config.properties
+Inference address: http://127.0.0.1:8085
+Management address: http://127.0.0.1:8081
+Metrics address: http://127.0.0.1:8082
+Model Store: /Users/thanavut/Developer/Capstone/Root-Will-Tear/backend/model_store
+Initial Models: N/A
+Log dir: /Users/thanavut/Developer/Capstone/Root-Will-Tear/backend/logs
+Metrics dir: /Users/thanavut/Developer/Capstone/Root-Will-Tear/backend/logs
+Netty threads: 0
+Netty client threads: 0
+Default workers per model: 14
+Blacklist Regex: N/A
+Maximum Response Size: 6553500
+Maximum Request Size: 6553500
+Limit Maximum Image Pixels: true
+Prefer direct buffer: false
+Allowed Urls: [file://.*|http(s)?://.*]
+Custom python dependency for model allowed: false
+Enable metrics API: true
+Metrics mode: LOG
+Disable system metrics: false
+Workflow Store: /Users/thanavut/Developer/Capstone/Root-Will-Tear/backend/model_store
+CPP log config: N/A
+Model config: N/A
+System metrics command: default
+Model API enabled: true
+2025-02-10T20:51:59,166 [INFO ] main org.pytorch.serve.ModelServer - 
+Torchserve version: 0.12.0
+TS Home: /opt/anaconda3/lib/python3.11/site-packages
+Current directory: /Users/thanavut/Developer/Capstone/Root-Will-Tear/backend
+Temp directory: /var/folders/c0/sd64djxn1hj2_kvzzktnk4900000gn/T/
+Metrics config path: /opt/anaconda3/lib/python3.11/site-packages/ts/configs/metrics.yaml
+Number of GPUs: 14
+Number of CPUs: 8
+Max heap size: 4096 M
+Python executable: /opt/anaconda3/bin/python
+Config file: config.properties
+Inference address: http://127.0.0.1:8085
+Management address: http://127.0.0.1:8081
+Metrics address: http://127.0.0.1:8082
+Model Store: /Users/thanavut/Developer/Capstone/Root-Will-Tear/backend/model_store
+Initial Models: N/A
+Log dir: /Users/thanavut/Developer/Capstone/Root-Will-Tear/backend/logs
+Metrics dir: /Users/thanavut/Developer/Capstone/Root-Will-Tear/backend/logs
+Netty threads: 0
+Netty client threads: 0
+Default workers per model: 14
+Blacklist Regex: N/A
+Maximum Response Size: 6553500
+Maximum Request Size: 6553500
+Limit Maximum Image Pixels: true
+Prefer direct buffer: false
+Allowed Urls: [file://.*|http(s)?://.*]
+Custom python dependency for model allowed: false
+Enable metrics API: true
+Metrics mode: LOG
+Disable system metrics: false
+Workflow Store: /Users/thanavut/Developer/Capstone/Root-Will-Tear/backend/model_store
+CPP log config: N/A
+Model config: N/A
+System metrics command: default
+Model API enabled: true
+2025-02-10T20:51:59,173 [INFO ] main org.pytorch.serve.servingsdk.impl.PluginsManager -  Loading snapshot serializer plugin...
+2025-02-10T20:51:59,173 [INFO ] main org.pytorch.serve.servingsdk.impl.PluginsManager -  Loading snapshot serializer plugin...
+2025-02-10T20:51:59,189 [INFO ] main org.pytorch.serve.ModelServer - Initialize Inference server with: NioServerSocketChannel.
+2025-02-10T20:51:59,189 [INFO ] main org.pytorch.serve.ModelServer - Initialize Inference server with: NioServerSocketChannel.
+2025-02-10T20:51:59,237 [INFO ] main org.pytorch.serve.ModelServer - Inference API bind to: http://127.0.0.1:8085
+2025-02-10T20:51:59,237 [INFO ] main org.pytorch.serve.ModelServer - Inference API bind to: http://127.0.0.1:8085
+2025-02-10T20:51:59,237 [INFO ] main org.pytorch.serve.ModelServer - Initialize Management server with: NioServerSocketChannel.
+2025-02-10T20:51:59,237 [INFO ] main org.pytorch.serve.ModelServer - Initialize Management server with: NioServerSocketChannel.
+2025-02-10T20:51:59,237 [INFO ] main org.pytorch.serve.ModelServer - Management API bind to: http://127.0.0.1:8081
+2025-02-10T20:51:59,237 [INFO ] main org.pytorch.serve.ModelServer - Management API bind to: http://127.0.0.1:8081
+2025-02-10T20:51:59,237 [INFO ] main org.pytorch.serve.ModelServer - Initialize Metrics server with: NioServerSocketChannel.
+2025-02-10T20:51:59,237 [INFO ] main org.pytorch.serve.ModelServer - Initialize Metrics server with: NioServerSocketChannel.
+2025-02-10T20:51:59,238 [INFO ] main org.pytorch.serve.ModelServer - Metrics API bind to: http://127.0.0.1:8082
+2025-02-10T20:51:59,238 [INFO ] main org.pytorch.serve.ModelServer - Metrics API bind to: http://127.0.0.1:8082
+2025-02-10T20:51:59,401 [ERROR] Thread-1 org.pytorch.serve.metrics.MetricCollector - Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.11/site-packages/ts/metrics/metric_collector.py", line 27, in <module>
+    system_metrics.collect_all(sys.modules['ts.metrics.system_metrics'], arguments.gpu)
+  File "/opt/anaconda3/lib/python3.11/site-packages/ts/metrics/system_metrics.py", line 119, in collect_all
+    value(num_of_gpu)
+  File "/opt/anaconda3/lib/python3.11/site-packages/ts/metrics/system_metrics.py", line 64, in gpu_utilization
+    import nvgpu
+ModuleNotFoundError: No module named 'nvgpu'
+
+2025-02-10T20:51:59,401 [ERROR] Thread-1 org.pytorch.serve.metrics.MetricCollector - Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.11/site-packages/ts/metrics/metric_collector.py", line 27, in <module>
+    system_metrics.collect_all(sys.modules['ts.metrics.system_metrics'], arguments.gpu)
+  File "/opt/anaconda3/lib/python3.11/site-packages/ts/metrics/system_metrics.py", line 119, in collect_all
+    value(num_of_gpu)
+  File "/opt/anaconda3/lib/python3.11/site-packages/ts/metrics/system_metrics.py", line 64, in gpu_utilization
+    import nvgpu
+ModuleNotFoundError: No module named 'nvgpu'
+
+2025-02-10T21:02:56,307 [WARN ] main org.pytorch.serve.util.ConfigManager - Your torchserve instance can access any URL to load models. When deploying to production, make sure to limit the set of allowed_urls in config.properties
+2025-02-10T21:02:56,307 [WARN ] main org.pytorch.serve.util.ConfigManager - Your torchserve instance can access any URL to load models. When deploying to production, make sure to limit the set of allowed_urls in config.properties
+2025-02-10T21:02:56,319 [INFO ] main org.pytorch.serve.servingsdk.impl.PluginsManager - Initializing plugins manager...
+2025-02-10T21:02:56,319 [INFO ] main org.pytorch.serve.servingsdk.impl.PluginsManager - Initializing plugins manager...
+2025-02-10T21:02:56,358 [INFO ] main org.pytorch.serve.metrics.configuration.MetricConfiguration - Successfully loaded metrics configuration from /opt/anaconda3/lib/python3.11/site-packages/ts/configs/metrics.yaml
+2025-02-10T21:02:56,358 [INFO ] main org.pytorch.serve.metrics.configuration.MetricConfiguration - Successfully loaded metrics configuration from /opt/anaconda3/lib/python3.11/site-packages/ts/configs/metrics.yaml
+2025-02-10T21:02:56,406 [INFO ] main org.pytorch.serve.ModelServer - 
+Torchserve version: 0.12.0
+TS Home: /opt/anaconda3/lib/python3.11/site-packages
+Current directory: /Users/thanavut/Developer/Capstone/Root-Will-Tear/backend
+Temp directory: /var/folders/c0/sd64djxn1hj2_kvzzktnk4900000gn/T/
+Metrics config path: /opt/anaconda3/lib/python3.11/site-packages/ts/configs/metrics.yaml
+Number of GPUs: 14
+Number of CPUs: 8
+Max heap size: 4096 M
+Python executable: /opt/anaconda3/bin/python
+Config file: config.properties
+Inference address: http://127.0.0.1:8085
+Management address: http://127.0.0.1:8081
+Metrics address: http://127.0.0.1:8082
+Model Store: /Users/thanavut/Developer/Capstone/Root-Will-Tear/backend/model_store
+Initial Models: N/A
+Log dir: /Users/thanavut/Developer/Capstone/Root-Will-Tear/backend/logs
+Metrics dir: /Users/thanavut/Developer/Capstone/Root-Will-Tear/backend/logs
+Netty threads: 0
+Netty client threads: 0
+Default workers per model: 14
+Blacklist Regex: N/A
+Maximum Response Size: 6553500
+Maximum Request Size: 6553500
+Limit Maximum Image Pixels: true
+Prefer direct buffer: false
+Allowed Urls: [file://.*|http(s)?://.*]
+Custom python dependency for model allowed: false
+Enable metrics API: true
+Metrics mode: LOG
+Disable system metrics: false
+Workflow Store: /Users/thanavut/Developer/Capstone/Root-Will-Tear/backend/model_store
+CPP log config: N/A
+Model config: N/A
+System metrics command: default
+Model API enabled: true
+2025-02-10T21:02:56,406 [INFO ] main org.pytorch.serve.ModelServer - 
+Torchserve version: 0.12.0
+TS Home: /opt/anaconda3/lib/python3.11/site-packages
+Current directory: /Users/thanavut/Developer/Capstone/Root-Will-Tear/backend
+Temp directory: /var/folders/c0/sd64djxn1hj2_kvzzktnk4900000gn/T/
+Metrics config path: /opt/anaconda3/lib/python3.11/site-packages/ts/configs/metrics.yaml
+Number of GPUs: 14
+Number of CPUs: 8
+Max heap size: 4096 M
+Python executable: /opt/anaconda3/bin/python
+Config file: config.properties
+Inference address: http://127.0.0.1:8085
+Management address: http://127.0.0.1:8081
+Metrics address: http://127.0.0.1:8082
+Model Store: /Users/thanavut/Developer/Capstone/Root-Will-Tear/backend/model_store
+Initial Models: N/A
+Log dir: /Users/thanavut/Developer/Capstone/Root-Will-Tear/backend/logs
+Metrics dir: /Users/thanavut/Developer/Capstone/Root-Will-Tear/backend/logs
+Netty threads: 0
+Netty client threads: 0
+Default workers per model: 14
+Blacklist Regex: N/A
+Maximum Response Size: 6553500
+Maximum Request Size: 6553500
+Limit Maximum Image Pixels: true
+Prefer direct buffer: false
+Allowed Urls: [file://.*|http(s)?://.*]
+Custom python dependency for model allowed: false
+Enable metrics API: true
+Metrics mode: LOG
+Disable system metrics: false
+Workflow Store: /Users/thanavut/Developer/Capstone/Root-Will-Tear/backend/model_store
+CPP log config: N/A
+Model config: N/A
+System metrics command: default
+Model API enabled: true
+2025-02-10T21:02:56,413 [INFO ] main org.pytorch.serve.servingsdk.impl.PluginsManager -  Loading snapshot serializer plugin...
+2025-02-10T21:02:56,413 [INFO ] main org.pytorch.serve.servingsdk.impl.PluginsManager -  Loading snapshot serializer plugin...
+2025-02-10T21:02:56,429 [INFO ] main org.pytorch.serve.ModelServer - Initialize Inference server with: NioServerSocketChannel.
+2025-02-10T21:02:56,429 [INFO ] main org.pytorch.serve.ModelServer - Initialize Inference server with: NioServerSocketChannel.
+2025-02-10T21:02:56,477 [INFO ] main org.pytorch.serve.ModelServer - Inference API bind to: http://127.0.0.1:8085
+2025-02-10T21:02:56,477 [INFO ] main org.pytorch.serve.ModelServer - Inference API bind to: http://127.0.0.1:8085
+2025-02-10T21:02:56,478 [INFO ] main org.pytorch.serve.ModelServer - Initialize Management server with: NioServerSocketChannel.
+2025-02-10T21:02:56,478 [INFO ] main org.pytorch.serve.ModelServer - Initialize Management server with: NioServerSocketChannel.
+2025-02-10T21:02:56,478 [INFO ] main org.pytorch.serve.ModelServer - Management API bind to: http://127.0.0.1:8081
+2025-02-10T21:02:56,478 [INFO ] main org.pytorch.serve.ModelServer - Management API bind to: http://127.0.0.1:8081
+2025-02-10T21:02:56,478 [INFO ] main org.pytorch.serve.ModelServer - Initialize Metrics server with: NioServerSocketChannel.
+2025-02-10T21:02:56,478 [INFO ] main org.pytorch.serve.ModelServer - Initialize Metrics server with: NioServerSocketChannel.
+2025-02-10T21:02:56,479 [INFO ] main org.pytorch.serve.ModelServer - Metrics API bind to: http://127.0.0.1:8082
+2025-02-10T21:02:56,479 [INFO ] main org.pytorch.serve.ModelServer - Metrics API bind to: http://127.0.0.1:8082
+2025-02-10T21:02:56,637 [ERROR] Thread-1 org.pytorch.serve.metrics.MetricCollector - Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.11/site-packages/ts/metrics/metric_collector.py", line 27, in <module>
+    system_metrics.collect_all(sys.modules['ts.metrics.system_metrics'], arguments.gpu)
+  File "/opt/anaconda3/lib/python3.11/site-packages/ts/metrics/system_metrics.py", line 119, in collect_all
+    value(num_of_gpu)
+  File "/opt/anaconda3/lib/python3.11/site-packages/ts/metrics/system_metrics.py", line 64, in gpu_utilization
+    import nvgpu
+ModuleNotFoundError: No module named 'nvgpu'
+
+2025-02-10T21:02:56,637 [ERROR] Thread-1 org.pytorch.serve.metrics.MetricCollector - Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.11/site-packages/ts/metrics/metric_collector.py", line 27, in <module>
+    system_metrics.collect_all(sys.modules['ts.metrics.system_metrics'], arguments.gpu)
+  File "/opt/anaconda3/lib/python3.11/site-packages/ts/metrics/system_metrics.py", line 119, in collect_all
+    value(num_of_gpu)
+  File "/opt/anaconda3/lib/python3.11/site-packages/ts/metrics/system_metrics.py", line 64, in gpu_utilization
+    import nvgpu
+ModuleNotFoundError: No module named 'nvgpu'
+
+2025-02-10T21:03:56,686 [ERROR] Thread-2 org.pytorch.serve.metrics.MetricCollector - Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.11/site-packages/ts/metrics/metric_collector.py", line 27, in <module>
+    system_metrics.collect_all(sys.modules['ts.metrics.system_metrics'], arguments.gpu)
+  File "/opt/anaconda3/lib/python3.11/site-packages/ts/metrics/system_metrics.py", line 119, in collect_all
+    value(num_of_gpu)
+  File "/opt/anaconda3/lib/python3.11/site-packages/ts/metrics/system_metrics.py", line 64, in gpu_utilization
+    import nvgpu
+ModuleNotFoundError: No module named 'nvgpu'
+
+2025-02-10T21:03:56,686 [ERROR] Thread-2 org.pytorch.serve.metrics.MetricCollector - Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.11/site-packages/ts/metrics/metric_collector.py", line 27, in <module>
+    system_metrics.collect_all(sys.modules['ts.metrics.system_metrics'], arguments.gpu)
+  File "/opt/anaconda3/lib/python3.11/site-packages/ts/metrics/system_metrics.py", line 119, in collect_all
+    value(num_of_gpu)
+  File "/opt/anaconda3/lib/python3.11/site-packages/ts/metrics/system_metrics.py", line 64, in gpu_utilization
+    import nvgpu
+ModuleNotFoundError: No module named 'nvgpu'
+
+2025-02-10T21:04:56,641 [ERROR] Thread-3 org.pytorch.serve.metrics.MetricCollector - Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.11/site-packages/ts/metrics/metric_collector.py", line 27, in <module>
+    system_metrics.collect_all(sys.modules['ts.metrics.system_metrics'], arguments.gpu)
+  File "/opt/anaconda3/lib/python3.11/site-packages/ts/metrics/system_metrics.py", line 119, in collect_all
+    value(num_of_gpu)
+  File "/opt/anaconda3/lib/python3.11/site-packages/ts/metrics/system_metrics.py", line 64, in gpu_utilization
+    import nvgpu
+ModuleNotFoundError: No module named 'nvgpu'
+
+2025-02-10T21:04:56,641 [ERROR] Thread-3 org.pytorch.serve.metrics.MetricCollector - Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.11/site-packages/ts/metrics/metric_collector.py", line 27, in <module>
+    system_metrics.collect_all(sys.modules['ts.metrics.system_metrics'], arguments.gpu)
+  File "/opt/anaconda3/lib/python3.11/site-packages/ts/metrics/system_metrics.py", line 119, in collect_all
+    value(num_of_gpu)
+  File "/opt/anaconda3/lib/python3.11/site-packages/ts/metrics/system_metrics.py", line 64, in gpu_utilization
+    import nvgpu
+ModuleNotFoundError: No module named 'nvgpu'
+
+2025-02-10T21:05:56,654 [ERROR] Thread-4 org.pytorch.serve.metrics.MetricCollector - Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.11/site-packages/ts/metrics/metric_collector.py", line 27, in <module>
+    system_metrics.collect_all(sys.modules['ts.metrics.system_metrics'], arguments.gpu)
+  File "/opt/anaconda3/lib/python3.11/site-packages/ts/metrics/system_metrics.py", line 119, in collect_all
+    value(num_of_gpu)
+  File "/opt/anaconda3/lib/python3.11/site-packages/ts/metrics/system_metrics.py", line 64, in gpu_utilization
+    import nvgpu
+ModuleNotFoundError: No module named 'nvgpu'
+
+2025-02-10T21:05:56,654 [ERROR] Thread-4 org.pytorch.serve.metrics.MetricCollector - Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.11/site-packages/ts/metrics/metric_collector.py", line 27, in <module>
+    system_metrics.collect_all(sys.modules['ts.metrics.system_metrics'], arguments.gpu)
+  File "/opt/anaconda3/lib/python3.11/site-packages/ts/metrics/system_metrics.py", line 119, in collect_all
+    value(num_of_gpu)
+  File "/opt/anaconda3/lib/python3.11/site-packages/ts/metrics/system_metrics.py", line 64, in gpu_utilization
+    import nvgpu
+ModuleNotFoundError: No module named 'nvgpu'
+
+2025-02-10T21:06:56,650 [ERROR] Thread-5 org.pytorch.serve.metrics.MetricCollector - Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.11/site-packages/ts/metrics/metric_collector.py", line 27, in <module>
+    system_metrics.collect_all(sys.modules['ts.metrics.system_metrics'], arguments.gpu)
+  File "/opt/anaconda3/lib/python3.11/site-packages/ts/metrics/system_metrics.py", line 119, in collect_all
+    value(num_of_gpu)
+  File "/opt/anaconda3/lib/python3.11/site-packages/ts/metrics/system_metrics.py", line 64, in gpu_utilization
+    import nvgpu
+ModuleNotFoundError: No module named 'nvgpu'
+
+2025-02-10T21:06:56,650 [ERROR] Thread-5 org.pytorch.serve.metrics.MetricCollector - Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.11/site-packages/ts/metrics/metric_collector.py", line 27, in <module>
+    system_metrics.collect_all(sys.modules['ts.metrics.system_metrics'], arguments.gpu)
+  File "/opt/anaconda3/lib/python3.11/site-packages/ts/metrics/system_metrics.py", line 119, in collect_all
+    value(num_of_gpu)
+  File "/opt/anaconda3/lib/python3.11/site-packages/ts/metrics/system_metrics.py", line 64, in gpu_utilization
+    import nvgpu
+ModuleNotFoundError: No module named 'nvgpu'
+
+2025-02-10T21:07:38,193 [WARN ] main org.pytorch.serve.util.ConfigManager - Your torchserve instance can access any URL to load models. When deploying to production, make sure to limit the set of allowed_urls in config.properties
+2025-02-10T21:07:38,193 [WARN ] main org.pytorch.serve.util.ConfigManager - Your torchserve instance can access any URL to load models. When deploying to production, make sure to limit the set of allowed_urls in config.properties
+2025-02-10T21:07:38,202 [INFO ] main org.pytorch.serve.servingsdk.impl.PluginsManager - Initializing plugins manager...
+2025-02-10T21:07:38,202 [INFO ] main org.pytorch.serve.servingsdk.impl.PluginsManager - Initializing plugins manager...
+2025-02-10T21:07:38,231 [INFO ] main org.pytorch.serve.metrics.configuration.MetricConfiguration - Successfully loaded metrics configuration from /opt/anaconda3/lib/python3.11/site-packages/ts/configs/metrics.yaml
+2025-02-10T21:07:38,231 [INFO ] main org.pytorch.serve.metrics.configuration.MetricConfiguration - Successfully loaded metrics configuration from /opt/anaconda3/lib/python3.11/site-packages/ts/configs/metrics.yaml
+2025-02-10T21:07:38,267 [INFO ] main org.pytorch.serve.ModelServer - 
+Torchserve version: 0.12.0
+TS Home: /opt/anaconda3/lib/python3.11/site-packages
+Current directory: /Users/thanavut/Developer/Capstone/Root-Will-Tear/backend
+Temp directory: /var/folders/c0/sd64djxn1hj2_kvzzktnk4900000gn/T/
+Metrics config path: /opt/anaconda3/lib/python3.11/site-packages/ts/configs/metrics.yaml
+Number of GPUs: 14
+Number of CPUs: 8
+Max heap size: 4096 M
+Python executable: /opt/anaconda3/bin/python
+Config file: config.properties
+Inference address: http://127.0.0.1:8085
+Management address: http://127.0.0.1:8081
+Metrics address: http://127.0.0.1:8082
+Model Store: /Users/thanavut/Developer/Capstone/Root-Will-Tear/backend/model_store
+Initial Models: N/A
+Log dir: /Users/thanavut/Developer/Capstone/Root-Will-Tear/backend/logs
+Metrics dir: /Users/thanavut/Developer/Capstone/Root-Will-Tear/backend/logs
+Netty threads: 0
+Netty client threads: 0
+Default workers per model: 14
+Blacklist Regex: N/A
+Maximum Response Size: 6553500
+Maximum Request Size: 6553500
+Limit Maximum Image Pixels: true
+Prefer direct buffer: false
+Allowed Urls: [file://.*|http(s)?://.*]
+Custom python dependency for model allowed: false
+Enable metrics API: true
+Metrics mode: LOG
+Disable system metrics: false
+Workflow Store: /Users/thanavut/Developer/Capstone/Root-Will-Tear/backend/model_store
+CPP log config: N/A
+Model config: N/A
+System metrics command: default
+Model API enabled: true
+2025-02-10T21:07:38,267 [INFO ] main org.pytorch.serve.ModelServer - 
+Torchserve version: 0.12.0
+TS Home: /opt/anaconda3/lib/python3.11/site-packages
+Current directory: /Users/thanavut/Developer/Capstone/Root-Will-Tear/backend
+Temp directory: /var/folders/c0/sd64djxn1hj2_kvzzktnk4900000gn/T/
+Metrics config path: /opt/anaconda3/lib/python3.11/site-packages/ts/configs/metrics.yaml
+Number of GPUs: 14
+Number of CPUs: 8
+Max heap size: 4096 M
+Python executable: /opt/anaconda3/bin/python
+Config file: config.properties
+Inference address: http://127.0.0.1:8085
+Management address: http://127.0.0.1:8081
+Metrics address: http://127.0.0.1:8082
+Model Store: /Users/thanavut/Developer/Capstone/Root-Will-Tear/backend/model_store
+Initial Models: N/A
+Log dir: /Users/thanavut/Developer/Capstone/Root-Will-Tear/backend/logs
+Metrics dir: /Users/thanavut/Developer/Capstone/Root-Will-Tear/backend/logs
+Netty threads: 0
+Netty client threads: 0
+Default workers per model: 14
+Blacklist Regex: N/A
+Maximum Response Size: 6553500
+Maximum Request Size: 6553500
+Limit Maximum Image Pixels: true
+Prefer direct buffer: false
+Allowed Urls: [file://.*|http(s)?://.*]
+Custom python dependency for model allowed: false
+Enable metrics API: true
+Metrics mode: LOG
+Disable system metrics: false
+Workflow Store: /Users/thanavut/Developer/Capstone/Root-Will-Tear/backend/model_store
+CPP log config: N/A
+Model config: N/A
+System metrics command: default
+Model API enabled: true
+2025-02-10T21:07:38,273 [INFO ] main org.pytorch.serve.servingsdk.impl.PluginsManager -  Loading snapshot serializer plugin...
+2025-02-10T21:07:38,273 [INFO ] main org.pytorch.serve.servingsdk.impl.PluginsManager -  Loading snapshot serializer plugin...
+2025-02-10T21:07:38,285 [INFO ] main org.pytorch.serve.ModelServer - Initialize Inference server with: NioServerSocketChannel.
+2025-02-10T21:07:38,285 [INFO ] main org.pytorch.serve.ModelServer - Initialize Inference server with: NioServerSocketChannel.
+2025-02-10T21:07:38,323 [INFO ] main org.pytorch.serve.ModelServer - Inference API bind to: http://127.0.0.1:8085
+2025-02-10T21:07:38,323 [INFO ] main org.pytorch.serve.ModelServer - Inference API bind to: http://127.0.0.1:8085
+2025-02-10T21:07:38,324 [INFO ] main org.pytorch.serve.ModelServer - Initialize Management server with: NioServerSocketChannel.
+2025-02-10T21:07:38,324 [INFO ] main org.pytorch.serve.ModelServer - Initialize Management server with: NioServerSocketChannel.
+2025-02-10T21:07:38,324 [INFO ] main org.pytorch.serve.ModelServer - Management API bind to: http://127.0.0.1:8081
+2025-02-10T21:07:38,324 [INFO ] main org.pytorch.serve.ModelServer - Management API bind to: http://127.0.0.1:8081
+2025-02-10T21:07:38,324 [INFO ] main org.pytorch.serve.ModelServer - Initialize Metrics server with: NioServerSocketChannel.
+2025-02-10T21:07:38,324 [INFO ] main org.pytorch.serve.ModelServer - Initialize Metrics server with: NioServerSocketChannel.
+2025-02-10T21:07:38,324 [INFO ] main org.pytorch.serve.ModelServer - Metrics API bind to: http://127.0.0.1:8082
+2025-02-10T21:07:38,324 [INFO ] main org.pytorch.serve.ModelServer - Metrics API bind to: http://127.0.0.1:8082
+2025-02-10T21:07:38,472 [ERROR] Thread-1 org.pytorch.serve.metrics.MetricCollector - Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.11/site-packages/ts/metrics/metric_collector.py", line 27, in <module>
+    system_metrics.collect_all(sys.modules['ts.metrics.system_metrics'], arguments.gpu)
+  File "/opt/anaconda3/lib/python3.11/site-packages/ts/metrics/system_metrics.py", line 119, in collect_all
+    value(num_of_gpu)
+  File "/opt/anaconda3/lib/python3.11/site-packages/ts/metrics/system_metrics.py", line 64, in gpu_utilization
+    import nvgpu
+ModuleNotFoundError: No module named 'nvgpu'
+
+2025-02-10T21:07:38,472 [ERROR] Thread-1 org.pytorch.serve.metrics.MetricCollector - Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.11/site-packages/ts/metrics/metric_collector.py", line 27, in <module>
+    system_metrics.collect_all(sys.modules['ts.metrics.system_metrics'], arguments.gpu)
+  File "/opt/anaconda3/lib/python3.11/site-packages/ts/metrics/system_metrics.py", line 119, in collect_all
+    value(num_of_gpu)
+  File "/opt/anaconda3/lib/python3.11/site-packages/ts/metrics/system_metrics.py", line 64, in gpu_utilization
+    import nvgpu
+ModuleNotFoundError: No module named 'nvgpu'
+
+2025-02-10T21:08:38,493 [ERROR] Thread-2 org.pytorch.serve.metrics.MetricCollector - Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.11/site-packages/ts/metrics/metric_collector.py", line 27, in <module>
+    system_metrics.collect_all(sys.modules['ts.metrics.system_metrics'], arguments.gpu)
+  File "/opt/anaconda3/lib/python3.11/site-packages/ts/metrics/system_metrics.py", line 119, in collect_all
+    value(num_of_gpu)
+  File "/opt/anaconda3/lib/python3.11/site-packages/ts/metrics/system_metrics.py", line 64, in gpu_utilization
+    import nvgpu
+ModuleNotFoundError: No module named 'nvgpu'
+
+2025-02-10T21:08:38,493 [ERROR] Thread-2 org.pytorch.serve.metrics.MetricCollector - Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.11/site-packages/ts/metrics/metric_collector.py", line 27, in <module>
+    system_metrics.collect_all(sys.modules['ts.metrics.system_metrics'], arguments.gpu)
+  File "/opt/anaconda3/lib/python3.11/site-packages/ts/metrics/system_metrics.py", line 119, in collect_all
+    value(num_of_gpu)
+  File "/opt/anaconda3/lib/python3.11/site-packages/ts/metrics/system_metrics.py", line 64, in gpu_utilization
+    import nvgpu
+ModuleNotFoundError: No module named 'nvgpu'
+
